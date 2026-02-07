@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="css-2.css">
+</head>
+<body>
+
+<div class="player">
+    <h2>🎵 Music Player</h2>
+
+    <!-- Song Info -->
+    <div class="song-info">
+        <h3 id="title">Song Title</h3>
+        <p id="artist">Artist Name</p>
+    </div>
+
+    <!-- Audio -->
+    <audio id="audio"></audio>
+
+    <!-- Progress Bar -->
+    <div class="progress-container">
+        <input type="range" id="progress" value="0">
+        <span id="duration">0:00</span>
+    </div>
+
+    <!-- Controls -->
+    <div class="controls">
+        <button onclick="prevSong()">⏮</button>
+        <button onclick="playPause()">▶️ / ⏸</button>
+        <button onclick="nextSong()">⏭</button>
+    </div>
+
+    <!-- Volume -->
+    <div class="volume">
+        🔊 <input type="range" id="volume" min="0" max="1" step="0.1">
+    </div>
+
+    <!-- Playlist (Bonus) -->
+    <ul id="playlist"></ul>
+</div>
+
+<script src="Java-2.js"></script>
+</body>
+</html>
