@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="csss.css">
+</head>
+<body>
+
+<h2>Image Gallery</h2>
+
+<!-- Filter Buttons -->
+<div class="filters">
+    <button onclick="filterImages('all')">All</button>
+    <button onclick="filterImages('nature')">Nature</button>
+    <button onclick="filterImages('city')">City</button>
+</div>
+
+<!-- Gallery -->
+<div class="gallery">
+    <img src="https://picsum.photos/id/1015/600/400" class="image nature" onclick="openLightbox(0)">
+    <img src="https://picsum.photos/id/1011/600/400" class="image nature" onclick="openLightbox(1)">
+    <img src="https://picsum.photos/id/1016/600/400" class="image city" onclick="openLightbox(2)">
+    <img src="https://picsum.photos/id/1025/600/400" class="image city" onclick="openLightbox(3)">
+</div>
+
+<!-- Lightbox -->
+<div id="lightbox">
+    <span class="close" onclick="closeLightbox()">×</span>
+    <img id="lightbox-img">
+    <div class="nav">
+        <button onclick="prevImage()">❮</button>
+        <button onclick="nextImage()">❯</button>
+    </div>
+</div>
+
+<script src="Java.js"></script>
+</body>
+</html>
